@@ -1,0 +1,26 @@
+﻿<Window x:Class="PoDGotovka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoDGotovka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="181*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="355*"/>
+        </Grid.RowDefinitions>
+        <Image Source="Images\zadanieIcon.jpg" Grid.Column="0" Grid.Row="0"/>
+        <Label Name="Slova" Content="Решение уравнений" HorizontalAlignment="Right"
+               VerticalAlignment="Center" Grid.Column="1" Grid.Row="0" FontSize="40"/>
+        <Frame Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Source="Gniga/Page1.xaml"/>
+
+
+
+    </Grid>
+</Window>
